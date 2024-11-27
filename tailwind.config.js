@@ -52,7 +52,7 @@ module.exports = {
     }
   },
     backgroundImage: {
-      "hero": "url(/images/image-background.jpg)"
+      "hero": "url(./images/image-background.jpg)"
     }
 
   },
