@@ -1,0 +1,50 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer base{
+  body{
+    @apply bg-champagne-200;
+  }
+}
+
+@layer components{
+  .max-container{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .max-cert{
+    @apply w-[250px] h-[180px];
+  }
+
+  .max-cert-cover{
+    @apply h-[275px] w-[380px];
+  }
+
+  .min-cert{
+    @apply h-[100px] w-[150px];
+  }
+
+  .min-cert-cover{
+    @apply h-[200px] w-[3px];
+  }
+}
+
+@layer utilities{
+  .padding{
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+}
